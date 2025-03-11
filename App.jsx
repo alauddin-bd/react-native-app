@@ -1,7 +1,8 @@
 import { View,  Text, Button } from 'react-native';
 import React from 'react';
-import ContactListScreen from './src/screens/contactList/ContactListScreen';
 
+import Grid from './src/components/Grid';
+// import ContactListScreen from './src/screens/contactList/ContactListScreen';
 // import LoginForm from './src/components/LoginForm';
 // import SectionListScreen from './src/components/SectionListScreen';
 // import FlatListScreen from './src/components/FlatListScreen';
@@ -15,8 +16,8 @@ import ContactListScreen from './src/screens/contactList/ContactListScreen';
 
 const App = () => {
   return (
-    <View style={{padding: 10}}>
-      <Text style={{fontSize:30}}>React Native Mobile App Tutorial</Text>     
+    <View style={{padding: 10, flex: 1}}>
+      <Text style={{fontSize:20, fontWeight: 'bold', marginVertical: 15}}>React Native Mobile App Tutorial</Text>     
       {/* <First /> */}
       {/* <JSX /> */}
       {/* <OnPress /> */}
@@ -27,7 +28,8 @@ const App = () => {
       {/* <FlatListScreen /> */}
       {/* <SectionListScreen /> */}
       {/* <LoginForm /> */}
-      <ContactListScreen />
+      {/* <ContactListScreen /> */}
+      <Grid />
     </View>
   )
 }
